@@ -1,0 +1,145 @@
+.main_index {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+/* 인덱스 - 비디오 */
+.main_index .main_video {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.main_index .main_video_wrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+.main_index .main_video iframe {
+    width: var(--video-width);
+    height: var(--video-height);
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* 인덱스 - 스크롤하기 애니메이션 */
+.scroll_animation {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+.scroll_animation p {
+    font-size: 14px;
+    line-height: 72px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.scroll_animation p span {
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -16px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg) translateX(-50%);
+    transform: rotate(-45deg) translateX(-50%);
+    -webkit-animation: scroll_effect 1.6s infinite;
+    animation: scroll_effect 1.6s infinite;
+}
+
+/* 인덱스 - 큐브 애니메이션 */
+.cube_all {
+    width: 80px;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cube {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 40px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.cube_3 {
+    margin-bottom: 0px;
+}
+.cube_all label:nth-of-type(1) span::before, .cube_all label:nth-of-type(2) span::before {
+    width: 28px;
+    right: 20px;
+}
+.cube span {
+    width: 80px;
+    color: rgba(255, 255, 255,1);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.cube span::before {
+    content: '';
+    width: 68px;
+    position: absolute;
+    bottom: -4px;
+    right: 28px;
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    opacity: 1;
+    transform: scale(0) translateX(0%);
+    transition: 0.4s;
+}
+.cube.cube_3 span::before {
+    width: 68px;
+}
+input[name=cube_input] {
+    display: none;
+}
+input[name=cube_input]:checked + label .cube span {
+    color: rgba(255, 255, 255,1);
+    font-size: 14.5px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+input[name=cube_input]:checked + label .cube span::before {
+    opacity: 1;
+    right: 0;
+    transform: scale(1) translateX(0%);
+}
+input[name=cube_input] + label:hover .cube span {
+    color: rgba(255, 255, 255,1);
+    font-size: 14.5px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+input[name=cube_input] + label:hover .cube span::before {
+    opacity: 1;
+    right: 0;
+    transform: scale(1) translateX(0%);
+}

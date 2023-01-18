@@ -1,6 +1,6 @@
 import { useWindowSize } from './useWindowSize';
 import { useState } from 'react';
-import '../css/Header.css';
+import '../css/header.css';
 
 function Header() {
   // 리사이징
@@ -40,30 +40,24 @@ function Header() {
               <span></span>
               <span></span>
             </label>
-            {
-              isChecked === true
-              ?
-                <div className='gnb_menu_all visible_y'>
-                  <div className='gnb_menu'>
-                    <h2><a href='/portfolio_react'>포트폴리오</a></h2>
-                    <span></span>
-                  </div>
-                  <div className='gnb_menu'>
-                    <h2><a href='/portfolio_react'>스킬</a></h2>
-                    <span></span>
-                  </div>
-                  <div className='gnb_menu'>
-                    <h2><a href='/portfolio_react'>커리어</a></h2>
-                    <span></span>
-                  </div>
-                  <div className='gnb_menu'>
-                    <h2><a href='/portfolio_react'>연락처</a></h2>
-                    <span></span>
-                  </div>
-                </div>
-              :
-                <div className='gnb_menu_all visible_n'></div>
-            }
+            <div className={`gnb_menu_all ${isChecked ? 'visible_y' : 'visible_n'}`}>
+              <div className='gnb_menu'>
+                <h2><a href='/portfolio_react'>포트폴리오</a></h2>
+                <span></span>
+              </div>
+              <div className='gnb_menu'>
+                <h2><a href='/portfolio_react'>스킬</a></h2>
+                <span></span>
+              </div>
+              <div className='gnb_menu'>
+                <h2><a href='/portfolio_react'>커리어</a></h2>
+                <span></span>
+              </div>
+              <div className='gnb_menu'>
+                <h2><a href='/portfolio_react'>연락처</a></h2>
+                <span></span>
+              </div>
+            </div>
           </div>
       }
     </header>

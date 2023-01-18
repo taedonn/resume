@@ -123,12 +123,14 @@ header {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.8);
     border-top: 1px solid #fff;
+    opacity: 1;
     z-index: 1;
 }
 .header_m .gnb_menu_all.visible_n {
     visibility: hidden;
     background-color: transparent;
     border-top: 1px solid transparent;
+    opacity: 0;
     z-index: -1;
 }
 .header_m .gnb_menu {
