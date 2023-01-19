@@ -3,10 +3,10 @@ import '../css/animationCube.css.map';
 import '../css/animationCube.scss';
 import '../css/animationCube.scss.map';
 
-function Cube({isChecked}) {
+function Cube(props) {
     return (
         <div className='cube_container'>
-            <div className={`scene ${{isChecked} ? 'scene-hover' : ''}`}>
+            <div className={props.click ? 'scene scene-hover' : 'scene'}>
                 <div className="webpack-cube">
                     <div className="outer-cube">
                         <div className="face face-top"></div>
@@ -35,7 +35,5 @@ function Cube({isChecked}) {
         </div>
     );
 }
-
-Cube.defaultProps = { isChecked: false }
 
 export default Cube;
