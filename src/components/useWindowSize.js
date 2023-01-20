@@ -5,8 +5,11 @@ export const useWindowSize = () => {
     const updateWindowSize = () => { setWindowSize([window.innerWidth, window.innerHeight]); }
     useLayoutEffect(() => {
         updateWindowSize();
-        window.addEventListener('resize', updateWindowSize);
-        return () => window.removeEventListener('resize', updateWindowSize); 
+        const timer = setInterval(() => { window.addEventListener('resize', updateWindowSize); }, 100);
+        return () => {
+            clearInterval(timer);
+            window.removeEventListener('resize', updateWindowSize);
+        }
     },[]);
     return [windowSize[0], windowSize[1]];
 }
