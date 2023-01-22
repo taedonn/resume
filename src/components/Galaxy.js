@@ -6,8 +6,8 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 // THREE
 import * as THREE from 'three';
+import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-//import { Scroll } from 'react-locomotive-scroll';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -256,7 +256,7 @@ function Galaxy() {
     }, []);
 
     return (
-        <canvas id='galaxy'></canvas>
+        <div id='galaxy'></div>
     );
 }
 
