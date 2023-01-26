@@ -59,9 +59,26 @@
     -webkit-text-fill-color: transparent;
 }
 .index_vision h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.index_vision h3 span {
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px;
+    margin: 0 6px;
     font-size: 20px;
     font-weight: 400;
+    line-height: 1;
     letter-spacing: 0;
-    margin-top: 16px;
+    background-color: #efefef;
     color: #666;
 }

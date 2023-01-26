@@ -28,7 +28,12 @@ function Main() {
         <section className='index_vision_wrap'>
           <div className='index_vision'>
             <h2>VISION</h2>
-            <h3>이태호(Tae Lee) | Web Development Portfolio</h3>
+            <h3>
+              <span>#프론트엔드</span>
+              <span>#ISTJ</span>
+              <span>#현실주의</span>
+              <span>#포트폴리오</span>
+            </h3>
           </div>
         </section>
       </div>
