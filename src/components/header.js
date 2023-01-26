@@ -19,7 +19,7 @@ function Header() {
         // 1080 이상일 때 PC
         width > 1080
         ?
-          <div className='header fade_down'>
+          <div className='header'>
             <ul className='gnb gnb_left'>
               <li><a className='gnb_menu' href='/portfolio_react'>포트폴리오</a></li>
               <li><a className='gnb_menu' href='/portfolio_react'>스킬</a></li>

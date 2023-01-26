@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.2bc8fb23.css",
-    "main.js": "/portfolio_react/static/js/main.3c26c0c5.js",
-    "static/media/animationCube.css.map": "/portfolio_react/static/media/animationCube.css.945665b489d7f04e6676.map",
-    "static/media/animationCube.scss.map": "/portfolio_react/static/media/animationCube.scss.8352ddc4ee9b7a105e7d.map",
-    "index.html": "/portfolio_react/index.html",
-    "main.2bc8fb23.css.map": "/portfolio_react/static/css/main.2bc8fb23.css.map",
-    "main.3c26c0c5.js.map": "/portfolio_react/static/js/main.3c26c0c5.js.map"
+    "main.css": "/vision_project_react/static/css/main.f60cdbbd.css",
+    "main.js": "/vision_project_react/static/js/main.6135e400.js",
+    "index.html": "/vision_project_react/index.html",
+    "main.f60cdbbd.css.map": "/vision_project_react/static/css/main.f60cdbbd.css.map",
+    "main.6135e400.js.map": "/vision_project_react/static/js/main.6135e400.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bc8fb23.css",
-    "static/js/main.3c26c0c5.js"
+    "static/css/main.f60cdbbd.css",
+    "static/js/main.6135e400.js"
   ]
 }
