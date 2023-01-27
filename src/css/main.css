@@ -1,84 +1,104 @@
-/* 인덱스 - 비디오 */
+/* 인덱스 공통값 */
 .main_index {
-    overflow: hidden;
-}
-.main_index .index_video {
     width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-}
-.main_index .index_video_wrap {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    background-color: rgb(255,255,255);
-}
-.main_index .index_video iframe {
-    width: calc(var(--video-width) * 1.15);
-    height: calc(var(--video-height) * 1.15);
-    position: fixed;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-/* 인덱스 - 비전 */
-.index_scroll_event {
-    width: 100%;
-    height: 750vh;
-}
-.index_vision_wrap {
-    width: 100%;
-}
-.index_vision {
-    width: 100%;
+/* 인덱스 왼쪽 */
+.index_left {
+    width: 50%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    background-color: #73BDA8;
 }
-.index_vision h2 {
-    font-size: 140px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 2px;
+.index_left img {
+    width: 80%;
+}
+
+/* 인덱스 오른쪽 */
+.index_right {
+    width: 50%;
+    min-height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, #21D4FD 0%, #B721FF 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    overflow: auto;
+    background-color: #fff;
 }
-.index_vision h3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.index_right .nes-container {
+    width: 600px;
+    margin-bottom: 40px;
 }
-.index_vision h3 span {
-    height: 60px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 30px;
-    margin: 0 6px;
+.index_right .nes-container:last-of-type {
+    margin-bottom: 0;
+}
+.index_right .nes-container.with-title {
+    padding: 1rem 2rem;
+}
+.index_right .nes-container.with-title > .title {
     font-size: 20px;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: 0;
-    background-color: #efefef;
+    color: #000;
+}
+.index_right .nes-container.with-title > .text {
+    font-size: 28px;
+    color: #000;
+}
+
+/* 인덱스 오른쪽 - 캐릭터 */
+.character .text {
+    transform: translateY(-4px);
+}
+.character .text span {
+    font-size: 20px;
     color: #666;
+}
+.character .hashtag {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.character .hashtag .nes-container {
+    padding: 4px;
+    margin-right: 12px;
+}
+.character .hashtag .nes-container:nth-of-type(1) { width: 158px; }
+.character .hashtag .nes-container:nth-of-type(2) { width: 58px; }
+.character .hashtag .nes-container:nth-of-type(3) { width: 58px; }
+.character .hashtag .nes-container:nth-of-type(4) { width: 74px; }
+
+/* 인덱스 오른쪽 - 스킬 */
+.skill .skill_list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.skill .skill_list .badge {
+    font-size: 20px;
+    padding: 0 14px;
+    margin: 14px;
+    color: #fff;
+}
+.skill .skill_list .badge { background-color: #212529; box-shadow: 0 0.5em #212529, 0 -0.5em #212529, 0.5em 0 #212529, -0.5em 0 #212529; }
+
+/* 인덱스 오른쪽 - 작품 */
+.works .works_list {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.works .works_list button {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 12px;
 }

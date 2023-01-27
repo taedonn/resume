@@ -1,6 +1,6 @@
-/* 폰트 - Noto Sans KR, Spoqa Han Sans Neo */
+/* 폰트 - Noto Sans KR, 둥근모꼴 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+@import url('https://webfontworld.github.io/DungGeunMo/DungGeunMo.css');
 
 /* 초기화 */
 * {
@@ -8,25 +8,27 @@
     padding: 0;
     box-sizing: border-box;
 }
-body,html {
-    font-family: 'Spoqa Han Sans Neo', 'Noto Sans KR';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: -0.4px;
-    word-break: keep-all;
-    color: #333;
+html, body {
     scroll-behavior: smooth;
     -ms-overflow-style: none; /* IE and Egde 스크롤바 숨김 */
     scrollbar-width: none; /* Firefox 스크롤바 숨김 */
 }
+html, body, pre, code, kbd, samp {
+    font-family: 'DungGeunMo', 'Noto Sans KR';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.4px;
+    word-break: keep-all;
+    color: #333;
+}
 body::-webkit-scrollbar { /* Chrome, Safari, Opera 스크롤바 숨김 */
     display: none;
 }
-ul,li {
+ul, li {
     list-style: none;
 }
-select,option,button {
+select, option, button {
     border: none;
     outline: none;
     cursor: pointer;
@@ -44,60 +46,7 @@ a {
     color: #333;
 }
 
-/* "스크롤하기" 애니메이션 */
-@-webkit-keyframes scroll_effect {
-    0% { -webkit-transform: rotate(-45deg) translate(0, 0); opacity: 0; }
-    50% { opacity: 1; }
-    100% { -webkit-transform: rotate(-45deg) translate(-20px, 20px); opacity: 0; }
-}
-@keyframes scroll_effect {
-    0% { transform: rotate(-45deg) translate(0, 0); opacity: 0; }
-    50% { opacity: 1; }
-    100% { transform: rotate(-45deg) translate(-20px, 20px); opacity: 0; }
-}
-
-/* 페이드 애니메이션 */
-@keyframes fade_up {
-    0% { opacity: 0; transform: translateY(2.5vh); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-@keyframes fade_down {
-    0% { opacity: 0; transform: translateY(-2.5vh); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-@keyframes fade_left {
-    0% { opacity: 0; transform: translateX(2.5vh); }
-    100% { opacity: 1; transform: translateX(0); }
-}
-@keyframes fade_right {
-    0% { opacity: 0; transform: translateX(-2.5vh); }
-    100% { opacity: 1; transform: translateX(0); }
-}
-@keyframes fade_in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@keyframes fade_out {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
-@keyframes zoom_out{
-    0% { transform: translateX(-50%) scale(1); opacity: 1; }
-    100% { transform: translateX(-50%) scale(0.9); opacity: 0; }
-}
-@keyframes zoom_in {
-    0% { transform: translateX(-50%) scale(0.9); opacity: 0; }
-    100% { transform: translateX(-50%) scale(1); opacity: 1; }
-}
-.fade_up { animation: fade_up 1s both 0.5s; }
-.fade_down { animation: fade_down 1s both 0.5s; }
-.fade_left { animation: fade_left 1s both 0.5s; }
-.fade_right { animation: fade_right 1s both 0.5s; }
-.fade_in { animation: fade_in 1s both 0.5s; }
-.zoom_out { animation: zoom_out 1s both; }
-.zoom_in { animation: zoom_in 1s both; }
-
-/* 비디오 넓이,높이 */
+/* 유튜브 넓이,높이 */
 :root {
     --video-width: 100vw;
     --video-height: 100vh;
