@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vision_project_react/static/css/main.94b56892.css",
-    "main.js": "/vision_project_react/static/js/main.6a3ee8be.js",
-    "index.html": "/vision_project_react/index.html",
-    "main.94b56892.css.map": "/vision_project_react/static/css/main.94b56892.css.map",
-    "main.6a3ee8be.js.map": "/vision_project_react/static/js/main.6a3ee8be.js.map"
+    "main.css": "/static/css/main.94b56892.css",
+    "main.js": "/static/js/main.def7c132.js",
+    "index.html": "/index.html",
+    "main.94b56892.css.map": "/static/css/main.94b56892.css.map",
+    "main.def7c132.js.map": "/static/js/main.def7c132.js.map"
   },
   "entrypoints": [
     "static/css/main.94b56892.css",
-    "static/js/main.6a3ee8be.js"
+    "static/js/main.def7c132.js"
   ]
 }
