@@ -1,6 +1,5 @@
-/* 폰트 - Noto Sans KR, 둥근모꼴 */
+/* 폰트 - Noto Sans KR */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url('https://webfontworld.github.io/DungGeunMo/DungGeunMo.css');
 
 /* 초기화 */
 * {
@@ -14,11 +13,10 @@ html, body {
     scrollbar-width: none; /* Firefox 스크롤바 숨김 */
 }
 html, body, pre, code, kbd, samp {
-    font-family: 'DungGeunMo', 'Noto Sans KR';
+    font-family: 'Noto Sans KR';
     font-size: 16px;
     font-weight: 400;
-    line-height: 1;
-    letter-spacing: -0.4px;
+    line-height: 1.25;
     word-break: keep-all;
     color: #333;
 }
