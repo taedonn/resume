@@ -40,6 +40,9 @@ function Main() {
           <span>VSCode</span>
         </div>
         <div className='title'>(주) 아이클레이브<span>2021 ~ 2023</span></div>
+        <div className='career_list'>
+          <p>홈페이지 리뉴얼</p>
+        </div>
       </div>
     </div>
   );

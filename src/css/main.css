@@ -5,7 +5,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    background-color: #13264C;
     background-color: #152238;
 }
 
@@ -98,7 +97,7 @@
     height: 28px;
     margin-left: 12px;
     transform: translateY(2px);
-    fill: rgba(255,255,255,0.7);
+    fill: rgba(255,255,255,0.9);
 }
 .index_right .skills_list {
     display: flex;
@@ -120,6 +119,7 @@
     font-weight: 400;
     letter-spacing: 0.5px;
     padding: 0 16px;
+    padding-bottom: 2px;
     margin-right: 8px;
     margin-bottom: 12px;
 }
