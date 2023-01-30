@@ -53,13 +53,13 @@ function Main() {
                   <li>로보MD 사이트 제작 관리</li>
                 </ul>
               </li>
-              <li>자동 배너 제작 솔루션 '배너' 운영
+              <li>자동 배너 제작 솔루션 운영
                 <ul className='company_info_sub'>
                   <li>배너 관리자 페이지 제작 관리</li>
                   <li>배너 템플릿 제작 관리</li>
                 </ul>
               </li>
-              <li>쇼핑몰 자동운영 솔루션 '진열' 운영
+              <li>진열 자동운영 솔루션 운영
                 <ul className='company_info_sub'>
                   <li>진열 관리자 페이지 제작 관리</li>
                   <li>진열 솔루션 개발 참여</li>
