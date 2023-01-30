@@ -6,7 +6,7 @@ function Main() {
     <div className="main_index">
       <div className='index_left'>
         <img src={pixelArt} alt='픽셀 캐릭터'></img>
-        <span className='copyright'>© WallpaperAccess {new Date().getFullYear()}</span>
+        <span className='copyright'>© {new Date().getFullYear()} WallpaperAccess</span>
       </div>
       <div className='index_right'>
         <div className='title'>
@@ -26,22 +26,51 @@ function Main() {
         <div className='skills_list'>
           <span>HTML</span>
           <span>CSS</span>
-          <span>SCSS</span>
           <span>SASS</span>
+          <span>SCSS</span>
           <span>JavaScript</span>
           <span>jQuery</span>
           <span>GSAP</span>
           <span>Three.js</span>
           <span>Node.js</span>
-          <span>React</span>
+          <span>React.js</span>
           <span>Git</span>
           <span>GitHub</span>
           <span>SourceTree</span>
           <span>VSCode</span>
         </div>
-        <div className='title'>(주) 아이클레이브<span>2021 ~ 2023</span></div>
-        <div className='career_list'>
-          <p>홈페이지 리뉴얼</p>
+        <div className='title'>EXPERIENCE</div>
+        <div className='company_list'>
+          <div className='company'>
+            <div className='company_name'>
+              <div className='company_logo'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16"><path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V.5ZM2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-1 2v1H2v-1h1Zm1 0h1v1H4v-1Zm9-10v1h-1V3h1ZM8 5h1v1H8V5Zm1 2v1H8V7h1ZM8 9h1v1H8V9Zm2 0h1v1h-1V9Zm-1 2v1H8v-1h1Zm1 0h1v1h-1v-1Zm3-2v1h-1V9h1Zm-1 2h1v1h-1v-1Zm-2-4h1v1h-1V7Zm3 0v1h-1V7h1Zm-2-2v1h-1V5h1Zm1 0h1v1h-1V5Z"/></svg></div>
+              <p>(주) 아이클레이브<span>2021 ~ 2023</span></p>
+            </div>
+            <ul className='company_info'>
+              <li>온라인 서비스 운영
+                <ul className='company_info_sub'>
+                  <li>아이클레이브 사이트 관리</li>
+                  <li>로보MD 사이트 제작 관리</li>
+                </ul>
+              </li>
+              <li>자동 배너 제작 솔루션 '배너' 운영
+                <ul className='company_info_sub'>
+                  <li>배너 관리자 페이지 제작 관리</li>
+                  <li>배너 템플릿 제작 관리</li>
+                </ul>
+              </li>
+              <li>쇼핑몰 자동운영 솔루션 '진열' 운영
+                <ul className='company_info_sub'>
+                  <li>진열 관리자 페이지 제작 관리</li>
+                  <li>진열 솔루션 개발 참여</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className='copyright'>
+          Copyright {new Date().getFullYear()}. xxDevBosa, all rights reserved.<br/>
+          <a href='https://github.com/xxdevbosa/resume' target='_blank' rel='noreferrer'>Check this repository on GitHub</a>
         </div>
       </div>
     </div>

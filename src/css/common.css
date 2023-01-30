@@ -2,47 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 /* 초기화 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html, body {
-    scroll-behavior: smooth;
-    -ms-overflow-style: none; /* IE and Egde 스크롤바 숨김 */
-    scrollbar-width: none; /* Firefox 스크롤바 숨김 */
-}
 html, body, pre, code, kbd, samp {
     font-family: 'Noto Sans KR';
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
     word-break: keep-all;
-    color: #333;
+    background-color: #152238;
 }
-body::-webkit-scrollbar { /* Chrome, Safari, Opera 스크롤바 숨김 */
-    display: none;
-}
-ul, li {
-    list-style: none;
-}
-select, option, button {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: #333;
-}
-input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: #333;
-}
-a {
-    text-decoration: none;
-    color: #333;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a { text-decoration: none; }
+ul, li { list-style: none; }
+input { border: none; outline: none; background-color: transparent; }
+select, option, button { border: none; outline: none; cursor: pointer; background-color: transparent; }
 
 /* 유튜브 넓이,높이 */
 :root {
