@@ -1,4 +1,4 @@
-/* 인덱스 공통값 */
+/* 공통값 */
 .main_index {
     width: 100%;
     position: relative;
@@ -8,7 +8,7 @@
     align-items: flex-start;
 }
 
-/* 인덱스 왼쪽 */
+/* 왼쪽 */
 .index_left {
     width: 50%;
     height: 100vh;
@@ -27,18 +27,8 @@
     object-fit: cover;
     object-position: center center;
 }
-.index_left .copyright {
-    position: absolute;
-    z-index: 2;
-    left: 20px;
-    bottom: 20px;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    color: rgba(255,255,255,0.4);
-}
 
-/* 인덱스 오른쪽 */
+/* 오른쪽 */
 .index_right {
     width: 50%;
     display: flex;
@@ -187,16 +177,46 @@
 .index_right .company .company_info_sub > li:first-of-type {
     margin-top: 10px;
 }
+
+/* 저작권 */
+.index_left .copyright {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.4);
+}
+.index_right .copyright {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.4);
+    margin-top: 80px;
+    text-align: center;
+}
+.index_right .copyright a {
+    display: inline-block;
+    margin-top: 4px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.4);
+}
+
+/* 반응형 */
 @media screen and ( max-width: 1400px ) {
     .index_right {
         padding: 60px;
     }
 }
 @media screen and ( max-width: 1080px ) {
-    /* 인덱스 왼쪽 */
+    /* 공통값 */
     .main_index {
         flex-direction: column;
     }
+
+    /* 왼쪽 */
     .index_left {
         width: 100%;
         height: auto;
@@ -212,32 +232,68 @@
         font-size: 12px;
     }
 
-    /* 인덱스 오른쪽 */
+    /* 오른쪽 */
     .index_right {
         width: 100%;
+        padding: 60px 40px;
+    }
+    .index_right .title {
+        font-size: 32px;
+    }
+    .index_right .title span {
+        font-size: 16px;
+    }
+    .index_right .title svg {
+        width: 24px;
+        height: 24px;
+    }
+    .index_right h2 span {
+        font-size: 14px;
+    }
+    .index_right .skills_list span {
+        height: 28px;
+        border-radius: 14px;
+        font-size: 12px;
+        padding: 0 14px;
+        margin-right: 6px;
+    }
+    .index_right .company .company_name p {
+        font-size: 20px;
+    }
+    .index_right .company .company_name p span {
+        font-size: 14px;
+    }
+    .index_right .company .company_info > li {
+        font-size: 16px;
+    }
+    .index_right .company .company_info_sub > li {
+        font-size: 14px;
+    }
+
+    /* 저작권 */
+    .index_right .copyright {
+        font-size: 12px;
     }
 }
 @media screen and ( max-width: 640px ) {
+    /* 왼쪽 */
     .index_left img {
         height: 360px;
     }
-    .index_right {
-        padding: 40px;
-    }
-}
 
-/* Copyright */
-.index_right .copyright {
-    width: 100%;
-    font-size: 14px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.4);
-    margin-top: 80px;
-    text-align: center;
-}
-.index_right .copyright a {
-    display: inline-block;
-    margin-top: 4px;
-    border-bottom: 1px solid rgba(255,255,255,0.4);
-    color: rgba(255,255,255,0.4);
+    /* 오른쪽 */
+    .index_right {
+        padding: 40px 20px;
+    }
+    .index_right h2 {
+        margin-bottom: 60px;
+    }
+    .index_right .skills_list {
+        margin-bottom: 60px;
+    }
+
+    /* 저작권 */
+    .index_right .copyright {
+        margin-top: 60px;
+    }
 }
