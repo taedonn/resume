@@ -171,11 +171,16 @@
     list-style: circle;
     font-size: 16px;
     font-weight: 300;
-    margin-top: 6px;
+    margin-top: 8px;
     color: rgba(255,255,255,0.7);
 }
 .index_right .company .company_info_sub > li:first-of-type {
-    margin-top: 10px;
+    margin-top: 8px;
+}
+.index_right .company .company_info_sub > li span {
+    font-size: 14px;
+    margin-left: 10px;
+    color: rgba(255,255,255,0.5);
 }
 
 /* 저작권 */
@@ -271,6 +276,14 @@
     .index_right .company_list {
         margin-top: 14px;
     }
+    .index_right .company .company_name .company_logo {
+        width: 56px;
+        height: 56px;
+    }
+    .index_right .company .company_name svg {
+        width: 24px;
+        height: 24px;
+    }
     .index_right .company .company_name p {
         font-size: 20px;
         margin-left: 16px;
@@ -284,12 +297,17 @@
     }
     .index_right .company .company_info > li {
         font-size: 16px;
+        margin-top: 14px;
     }
     .index_right .company .company_info_sub {
         padding-left: 20px;
     }
     .index_right .company .company_info_sub > li {
         font-size: 14px;
+    }
+    .index_right .company .company_info_sub > li span {
+        font-size: 12px;
+        margin-left: 8px;
     }
 
     /* 저작권 */
