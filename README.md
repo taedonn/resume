@@ -1,3 +1,3 @@
 # Resume
 
-[https://xxdevbosa.github.io/resume](https://xxdevbosa.github.io/resume)
+[https://taedonn.github.io/resume](https://taedonn.github.io/resume)
