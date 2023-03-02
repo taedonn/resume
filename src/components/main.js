@@ -18,8 +18,8 @@ function Main() {
           <span>#개발자</span>
           <span>#ISTJ</span>
           <span>#서울</span>
-          <span>#게이머</span>
-          <span>#LOL</span>
+          <span>#토론토</span>
+          <span>#OCADU</span>
         </h2>
         <div className='title'>프로그램/언어</div>
         <div className='skills_list'>
