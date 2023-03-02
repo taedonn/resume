@@ -6,8 +6,7 @@ Tae Lee | GitHub @ taedonn | FE & ID
 
 #프론트엔드 #개발자 #ISTJ #서울 #토론토 #OCADU
 
-![title_image](./src/img/pixel_art.gif)
-
+![title_image](./src/img/pixel_art_readme.gif)<br>
 (출처 : WallpaperAccess)
 
 &nbsp;
