@@ -52,14 +52,14 @@ function Main() {
             <ul className='company_info'>
               <li>온라인 서비스 운영
                 <ul className='company_info_sub'>
-                  <li>로보MD 사이트 운영 관리<span>2021.12 ~</span></li>
+                  <li>로보MD 사이트 운영 관리<span>2021.12 ~ 현재</span></li>
                   <li>로보MD 사이트 리뉴얼<span>2022.01 ~ 2022.03</span></li>
                   <li>로보MD 회원가입페이지 리뉴얼<span>2022.10 ~ 2022.11</span></li>
                 </ul>
               </li>
               <li>자동 배너 제작 솔루션 운영
                 <ul className='company_info_sub'>
-                  <li>배너 템플릿 제작 관리<span>2021.12 ~</span></li>
+                  <li>배너 템플릿 제작 관리<span>2021.12 ~ 현재</span></li>
                   <li>배너 스크립트 리팩토링<span>2023.01 ~ 2023.02</span></li>
                 </ul>
               </li>
