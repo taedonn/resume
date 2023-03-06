@@ -1,6 +1,10 @@
 # Resume
 
-[https://taedonn.github.io/resume](https://taedonn.github.io/resume)
+Live Demo : [https://taedonn.github.io/resume](https://taedonn.github.io/resume)
+
+[![Node Version](https://img.shields.io/badge/featured%20on-Node%20%4016.13.2-%2368a063)](#) [![NPM Version](https://img.shields.io/badge/featured%20on-NPM%20%408.1.2-%23cc3534)](#)
+
+&nbsp;
 
 Tae Lee | GitHub @ taedonn | FE & ID
 
