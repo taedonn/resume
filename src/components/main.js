@@ -26,21 +26,19 @@ function Main() {
           <span>HTML</span>
           <span>CSS</span>
           <span>SASS</span>
-          <span>SCSS</span>
           <span>Markdown</span>
           <span>JavaScript</span>
+          <span>TypeScript</span>
           <span>jQuery</span>
           <span>GSAP</span>
           <span>Three.js</span>
           <span>Node.js</span>
           <span>React.js</span>
+          <span>Vue.js</span>
           <span>AJAX</span>
           <span>JSON</span>
-          <span>Jekyll</span>
           <span>Git</span>
           <span>GitHub</span>
-          <span>SourceTree</span>
-          <span>VSCode</span>
         </div>
         <div className='title'>EXPERIENCE</div>
         <div className='company_list'>
